@@ -1,7 +1,7 @@
-package com.eniacdevelopment.serialization.DataModel.User;
+package com.eniacdevelopment.eniachome.DataModel.User;
 
-import com.eniacdevelopment.serialization.DataModel.BasePackage;
-import com.eniacdevelopment.serialization.DataModel.PackageType;
+import com.eniacdevelopment.eniachome.DataModel.BasePackage;
+import com.eniacdevelopment.eniachome.DataModel.PackageType;
 
 /**
  * Created by larsg on 10/13/2016.

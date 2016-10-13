@@ -1,4 +1,4 @@
-package com.eniacdevelopment.serialization.DataModel;
+package com.eniacdevelopment.eniachome.DataModel;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonSubTypes;

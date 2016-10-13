@@ -1,6 +1,6 @@
-package com.eniacdevelopment.serialization;
+package com.eniacdevelopment.eniachome;
 
-import com.eniacdevelopment.serialization.DataModel.EventNotificationPackage;
+import com.eniacdevelopment.eniachome.DataModel.EventNotificationPackage;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Assert;

@@ -1,6 +1,6 @@
-package com.eniacdevelopment.serialization;
+package com.eniacdevelopment.eniachome;
 
-import com.eniacdevelopment.serialization.DataModel.BasePackage;
+import com.eniacdevelopment.eniachome.DataModel.BasePackage;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
