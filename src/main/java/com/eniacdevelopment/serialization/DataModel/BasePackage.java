@@ -10,16 +10,9 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.EXISTING_PROPERTY, property="type", visible=true)
 @JsonSubTypes({
-        @JsonSubTypes.Type(value = EventNotification.class, name=PackageType.Constants.NOTIFICATION)
+        @JsonSubTypes.Type(value = EventNotificationPackage.class, name=PackageType.Constants.NOTIFICATION)
         //@JsonSubTypes.Type(value = Request.class, name=PackageType.Constants.REQUEST)
 })
-public abstract class AbstractPackage {
-    private PackageType type;
-    public PackageType getType() {
-        return type;
-    }
-
-    public void setType(PackageType type) {
-        this.type = type;
-    }
+public abstract class BasePackage {
+    public PackageType type;
 }

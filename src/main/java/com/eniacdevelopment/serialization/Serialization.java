@@ -1,6 +1,6 @@
 package com.eniacdevelopment.serialization;
 
-import com.eniacdevelopment.serialization.DataModel.AbstractPackage;
+import com.eniacdevelopment.serialization.DataModel.BasePackage;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -16,11 +16,11 @@ public class Serialization {
         this.objectMapper = objectMapper;
     }
 
-    public byte[] Serialize(AbstractPackage abstractPackage) throws JsonProcessingException {
+    public byte[] Serialize(BasePackage abstractPackage) throws JsonProcessingException {
         return this.objectMapper.writeValueAsBytes(abstractPackage);
     }
 
-    public AbstractPackage Deserialize(byte[] jsonBytes) throws IOException {
-        return this.objectMapper.readValue(jsonBytes, AbstractPackage.class);
+    public BasePackage Deserialize(byte[] jsonBytes) throws IOException {
+        return this.objectMapper.readValue(jsonBytes, BasePackage.class);
     }
 }

@@ -1,6 +1,6 @@
 package com.eniacdevelopment.serialization;
 
-import com.eniacdevelopment.serialization.DataModel.EventNotification;
+import com.eniacdevelopment.serialization.DataModel.EventNotificationPackage;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Assert;
@@ -24,14 +24,14 @@ public class SerializationTest {
 
     @Test
     public void SerializerShouldSerializeAbstractPackage()  {
-        EventNotification testEventNotification = new EventNotification(){{
+        EventNotificationPackage testEventNotification = new EventNotificationPackage(){{
             Id = "Hello";
             Location = "Kitchen";
         }};
 
         byte[] resultSerializeBytes = new byte[0];
         String resultSerializeString = null;
-        EventNotification resultDeserialize = null;
+        EventNotificationPackage resultDeserialize = null;
         try {
             resultSerializeBytes = serializer.Serialize(testEventNotification);
         } catch (JsonProcessingException e) {
@@ -43,11 +43,11 @@ public class SerializationTest {
             e.printStackTrace();
         }
         try {
-            resultDeserialize = (EventNotification) serializer.Deserialize(resultSerializeBytes);
+            resultDeserialize = (EventNotificationPackage) serializer.Deserialize(resultSerializeBytes);
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        Assert.assertEquals(testEventNotification, resultDeserialize);
+        Assert.assertEquals(testEventNotification.Id, resultDeserialize.Id);
     }
 }

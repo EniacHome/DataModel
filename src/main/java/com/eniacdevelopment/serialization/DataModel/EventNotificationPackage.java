@@ -3,9 +3,9 @@ package com.eniacdevelopment.serialization.DataModel;
 /**
  * Created by larsg on 10/5/2016.
  */
-public class EventNotification extends AbstractPackage{
-    public EventNotification(){
-        this.setType(com.eniacdevelopment.serialization.DataModel.PackageType.notification);
+public class EventNotificationPackage extends BasePackage {
+    public EventNotificationPackage(){
+        this.type = PackageType.NOTIFICATION_PACKAGE;
     }
 
     public String Id;
