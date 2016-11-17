@@ -3,7 +3,7 @@ package com.eniacdevelopment.eniachome.DataModel.User;
 /**
  * Created by larsg on 10/13/2016.
  */
-public class CreateUserPackage extends BaseUserPackage{
+public class CreateUser {
     public String UserName;
 
     public String Password;
