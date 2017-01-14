@@ -8,5 +8,5 @@ import java.util.Date;
 public class SensorStatus {
     public int Value;
     public Date Date;
-    public Boolean Alarmed;
+    public boolean Alarmed;
 }

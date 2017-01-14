@@ -8,7 +8,11 @@ import com.eniacdevelopment.EniacHome.DataModel.Entity;
 public class Sensor extends Entity{
     public String Name;
     public SensorType SensorType;
-    public Boolean Enabled;
+    public int Level;
+    public boolean Enabled;
+
+    public CompareMethod CompareMethod;
+    public int CompareValue;
 
     public SensorStatus SensorStatus;
 }
