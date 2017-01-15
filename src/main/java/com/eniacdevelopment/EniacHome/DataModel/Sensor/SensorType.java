@@ -7,5 +7,6 @@ public enum SensorType {
     TemeratureSensor,
     SmokeSensor,
     ContactSensor,
-    InfraredSensor
+    InfraredSensor,
+    Unknown
 }
