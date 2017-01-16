@@ -15,5 +15,5 @@ public class User extends Entity {
     public String Firstname;
     public String Lastname;
 
-    public List<UserRole> Roles;
+    public UserRole Role;
 }
